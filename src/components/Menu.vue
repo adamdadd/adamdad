@@ -6,6 +6,9 @@
     <a id="AboutMe" href="/about">
       <span>About Me</span>
     </a>
+    <a id="Experience" href="/experience">
+      <span>Experience</span>
+    </a>
   </Slide>
 </template>
 

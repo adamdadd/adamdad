@@ -8,6 +8,7 @@
     </ul>
     <img src="../assets/avatar.png" alt="Just Me">
     <a href="/" style="text-decoration: none"><span class="buttonh" role="button">Home</span></a>
+    <a href="/experience" style="text-decoration: none"><span class="buttonb" role="button">Beyond!</span></a>
     </div>
 </template>
 
@@ -50,17 +51,18 @@ ul {
 img {
     position: absolute;
     align: right;
-    top: 400px;
+    top: 25vw;
     right: 50px;
     width: 20%;
-    animation: fade 7s;
-    -moz-animation: fade 7s; /* Firefox */
-    -webkit-animation: fade 7s; /* Safari and Chrome */
-    -o-animation: fade 7s; /* Opera */
+    animation: fade 10s;
+    -moz-animation: fade 10s; /* Firefox */
+    -webkit-animation: fade 10s; /* Safari and Chrome */
+    -o-animation: fade 10s; /* Opera */
 }
 .buttonh {
     position: relative;
-    top: -100px;
+    top: 500px;
+    left: -675px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,6 +81,30 @@ img {
     -webkit-animation: fade 7s; /* Safari and Chrome */
 }
 .buttonh:hover {
+    background-color: #ff4e0f;
+}
+.buttonb {
+    position: relative;
+    top: -200px;
+    left: 675px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 15px 32px;
+    width: 10%;
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #008cef;
+    box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
+    animation: fade 5s;
+    -moz-animation: fade 7s; /* Firefox */
+    -webkit-animation: fade 7s; /* Safari and Chrome */
+}
+.buttonb:hover {
     background-color: #ff4e0f;
 }
 @keyframes fade {

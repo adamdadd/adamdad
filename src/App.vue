@@ -5,6 +5,7 @@
     <Menu/>
             <router-link class= "nav-link" active-class="active" id="title" to="/"></router-link>
             <router-link class="nav-link" active-class="active" to="/about"></router-link>
+            <router-link class="nav-link" active-class="active" to="/experience"></router-link>
     <transition name="fade">
         <router-view></router-view>
     </transition>
@@ -52,11 +53,13 @@ export default {
   opacity: 0;
 }
 .fade-enter-active {
-  transition: opacity 10s ease;
+  transition: opacity 5s ease;
+  -moz-transition: opacity 5s ease;
 }
 .fade-leave {}
 .fade-leave-active {
-  transition: opacity 10s ease;
+  transition: opacity 5s ease;
+  -moz-transition: opacity 5s ease;
   opacity: 0;
 }
 </style>

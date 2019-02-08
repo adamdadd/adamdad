@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home.vue'
 import AboutMe from './components/AboutMe.vue'
+import Experience from './components/Experience.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,11 @@ const router = new Router({
             path: '/about',
             name: 'aboutme',
             component: AboutMe,
+        },
+        {
+            path: '/experience',
+            name: 'experience',
+            component: Experience,
         }
     ],
     mode: 'history'
