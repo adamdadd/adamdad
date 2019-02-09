@@ -8,7 +8,7 @@
     </h2>
     <br/>
     <br/>
-    <a href="/about" style= "text-decoration: none"><span class="button1" role="button">--></span></a>
+    <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button">--></span></a>
     <img id="eqn1" src="../assets/einfield.svg" border="0"/>
     <img id="eqn2" src="../assets/4mom.svg" border="0" />
     <img id="calabi" src="../assets/Calabi_yau.png" border="0" />
