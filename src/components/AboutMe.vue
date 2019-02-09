@@ -2,7 +2,7 @@
     <div id="aboutme">
     <h2 id="AboutMe">Who On Earth is <span class="name">Adam Dad</span>?</h2>
     <ul>
-        <li> Astrophysics Student at Universty of Liverpool.</li>
+        <li> Astrophysics Student at University of Liverpool.</li>
         <br/>
             <li> Passionate About Problem Solving.</li>
     </ul>
@@ -31,7 +31,7 @@ h2 {
     padding-top: 15%;
     text-align: left;
     font-size: 36px;
-    color: #ffffff;
+    color: #000000;
 }
 .name {
     color: #ff4e0f;
@@ -43,6 +43,7 @@ ul {
     top: 300px;
     left: 50px;
     width: 40%;
+    color: #000000;
     animation: fade 5s;
     -moz-animation: fade 5s; /* Firefox */
     -webkit-animation: fade 5s; /* Safari and Chrome */
@@ -54,10 +55,14 @@ img {
     top: 25vw;
     right: 50px;
     width: 20%;
+    border-radius: 50%;
     animation: fade 10s;
     -moz-animation: fade 10s; /* Firefox */
     -webkit-animation: fade 10s; /* Safari and Chrome */
     -o-animation: fade 10s; /* Opera */
+}
+a {
+    outline: 0;
 }
 .buttonh {
     position: relative;
@@ -74,14 +79,15 @@ img {
     font-size: 24px;
     font-family: 'Merriweather', serif;
     text-align: center;
-    background-color: #008cef;
+    background-color: #000000/*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
     -moz-animation: fade 7s; /* Firefox */
     -webkit-animation: fade 7s; /* Safari and Chrome */
 }
 .buttonh:hover {
-    background-color: #ff4e0f;
+    background-color: #ffffff /*#ff4e0f*/;
+    color: #000000;
 }
 .buttonb {
     position: relative;
@@ -98,14 +104,15 @@ img {
     font-size: 24px;
     font-family: 'Merriweather', serif;
     text-align: center;
-    background-color: #008cef;
+    background-color: #000000 /*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
     -moz-animation: fade 7s; /* Firefox */
     -webkit-animation: fade 7s; /* Safari and Chrome */
 }
 .buttonb:hover {
-    background-color: #ff4e0f;
+    background-color: #ffffff /*#ff4e0f*/;
+    color: #000000;
 }
 @keyframes fade {
    0% {opacity:0;}
