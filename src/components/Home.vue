@@ -8,7 +8,8 @@
     </h2>
     <br/>
     <br/>
-    <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button">--></span></a>
+    <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button"><img src="../assets/GitHub-Mark-64px.png" /></span></a>
+    <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button"><img src="../assets/In-Black-66px-R.png" /></span></a>
     <img id="eqn1" src="../assets/einfield.svg" border="0"/>
     <img id="eqn2" src="../assets/4mom.svg" border="0" />
     <img id="calabi" src="../assets/Calabi_yau.png" border="0" />
@@ -101,8 +102,9 @@ h3 {
   animation-delay: 9s;
 }
 .button1 {
-    position: relative;
-    top: 80px;
+    position: absolute;
+    top: 250px;
+    left: 70vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -116,7 +118,7 @@ h3 {
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
-    background-color: #000000 /*#008cef*/;
+    background-color: #ffffff /*#008cef*/;
     overflow-wrap: break-word;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
@@ -125,7 +127,36 @@ h3 {
 }
 .button1:hover {
     outline: 0;
-    background-color: #ffffff /*#ff4e0f*/;
+    background-color: #000000 /*#ff4e0f*/;
+    color: #000000;
+}
+.button2 {
+    position: absolute;
+    top: 250px;
+    left: 16vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 15px 32px;
+    width: 90%;
+    min-width: 10%;
+    max-width: 10%;
+    font-size: 1.75vw;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #ffffff /*#008cef*/;
+    overflow-wrap: break-word;
+    box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
+    animation: fade 5s;
+    -moz-animation: fade 7s; /* Firefox */
+    -webkit-animation: fade 7s; /* Safari and Chrome */
+}
+.button2:hover {
+    outline: 0;
+    background-color: #000000 /*#ff4e0f*/;
     color: #000000;
 }
 a {
