@@ -40,7 +40,8 @@ body {
   overflow:hidden;
   background-image: #ffffff; /* radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
   background-size: cover;
-  min-height: 100%;
+  min-height: 100vw;
+  min-width: 100vw;
 }
 
 .system {
