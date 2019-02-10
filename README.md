@@ -1,29 +1,6 @@
 # adamdad
 
-## Project setup
-```
-npm install
-```
+Personal website developed using vuejs.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Status:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43f242fd-6e2c-416c-b20c-ec315994b082/deploy-status)](https://app.netlify.com/sites/happy-brattain-4d090c/deploys)
