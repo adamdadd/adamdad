@@ -14,6 +14,9 @@
     <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button">
             <img src="../assets/In-Black-66px-R.png" style="width:auto" />
         </span></a>
+    <a href="/about" style= "text-decoration: none"><span class="button_launch" role="button">
+            <img src="../assets/launch.png" style="width:20vw" />
+        </span></a>
     <picture>
         <source id="overlay" srcset="../assets/spacetime.png" media="(max-width: 800px)">
         <img id="overlay" src="../assets/overlay.png" />
@@ -182,6 +185,34 @@ h3 {
     outline: 0;
     background-color: #000000 /*#ff4e0f*/;
     color: #000000;
+}
+.button_launch {
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 15px 32px;
+    width: auto;
+    min-width: 5%;
+    max-width: 5%;
+    font-size: 1.75vw;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #000000 /*#008cef*/;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
+    animation: fade 5s;
+    -moz-animation: fade 7s; /* Firefox */
+    -webkit-animation: fade 7s; /* Safari and Chrome */
+}
+.button_launch:hover {
+    outline: 0;
+    background-color: #ffffff /*#ff4e0f*/;
 }
 a {
     outline: 0;
