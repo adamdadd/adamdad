@@ -9,13 +9,13 @@
     <br/>
     <br/>
     <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button">
-            <img src="../assets/GitHub-Mark-64px.png" style="width: auto"/>
+            <img src="../assets/GitHub-Mark-64px.png" style="width: 32px"/>
         </span></a>
     <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button">
-            <img src="../assets/In-Black-66px-R.png" style="width:auto" />
+            <img src="../assets/In-Black-66px-R.png" style="width:32px" />
         </span></a>
     <a href="/about" style= "text-decoration: none"><span class="button_launch" role="button">
-            <img src="../assets/launch.png" style="width:20vw" />
+            <img src="../assets/launch.png" style="width:32px" />
         </span></a>
     <picture>
         <source id="overlay" srcset="../assets/spacetime.png" media="(max-width: 800px)">
@@ -129,7 +129,7 @@ h3 {
   z-index: -1;
 }
 .button1 {
-    display: flex;
+    display: inline-table;
     position: absolute;
     top: 250px;
     right: 20vw;
@@ -158,7 +158,7 @@ h3 {
     color: #000000;
 }
 .button2 {
-    display: flex;
+    display: inline-table;
     position: absolute;
     top: 250px;
     left: 20vw;
@@ -187,7 +187,7 @@ h3 {
     color: #000000;
 }
 .button_launch {
-    display: flex;
+    display: inline-table;
     position: relative;
     top: 150px;
     left: 0vw;
@@ -200,6 +200,7 @@ h3 {
     width: auto;
     min-width: 5%;
     max-width: 5%;
+    max-height: 64px;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
