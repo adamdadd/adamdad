@@ -9,10 +9,10 @@
     <br/>
     <br/>
     <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button">
-            <img src="../assets/GitHub-Mark-64px.png" />
+            <img src="../assets/GitHub-Mark-64px.png" style="width: auto"/>
         </span></a>
     <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button">
-            <img src="../assets/In-Black-66px-R.png" />
+            <img src="../assets/In-Black-66px-R.png" style="width:auto" />
         </span></a>
     <picture>
         <source id="overlay" srcset="../assets/spacetime.png" media="(max-width: 800px)">
