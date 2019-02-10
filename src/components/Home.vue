@@ -8,10 +8,18 @@
     </h2>
     <br/>
     <br/>
-    <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button"><img src="../assets/GitHub-Mark-64px.png" /></span></a>
-    <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button"><img src="../assets/In-Black-66px-R.png" /></span></a>
-    <img id="eqn1" src="../assets/einfield.svg" border="0"/>
-    <img id="eqn2" src="../assets/4mom.svg" border="0" />
+    <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button">
+            <img src="../assets/GitHub-Mark-64px.png" />
+        </span></a>
+    <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button">
+            <img src="../assets/In-Black-66px-R.png" />
+        </span></a>
+    <picture>
+        <source id="overlay" srcset="../assets/spacetime.png" media="(max-width: 800px)">
+        <img id="overlay" src="../assets/overlay.png" />
+    </picture>
+    <img id="genRel" src="../assets/einfield.svg" border="0"/>
+    <img id="momMat" src="../assets/4mom.svg" border="0" />
     <img id="calabi" src="../assets/Calabi_yau.png" border="0" />
     <img id="feynmann" src="../assets/Feynmann.png" border="0" />
   </div>
@@ -43,10 +51,9 @@ h1 {
   margin: 64px 0 0;
   animation: fadedown 4s;
   animation: glitch 5s infinite;
-  -moz-animation: fadedown 4%; /* Firefox */
-  -moz-animation-delay: 2s;
-  -webkit-animation: fadedown 4s; /* Safari and Chrome */
-  -o-animation: fadedown 4s; /* Opera */
+  -moz-animation: fadeDown 4s; /* Firefox */
+  -webkit-animation: fadeDown 4s; /* Safari and Chrome */
+  -o-animation: fadeDown 4s; /* Opera */
 }
 h2 {
   position: relative;
@@ -63,63 +70,80 @@ h2 {
 h3 {
   margin: 40px 0 0;
 }
-#eqn1 {
-  position: absolute;
+#overlay {
+    display: flex;
+    position: absolute;
+    opacity: 0.1;
+    top: -20vw;
+    left: 0vw;
+    transform: scaleY(1.7);
+    width: 100vw;
+    animation: fadeo 5s ;
+    z-index: -1;
+}
+#genRel {
+  display: flex;
+  position: relative;
   opacity: 0;
-  width: 15vw;
-  top: 5vw;
-  left: 2vw;
+  width: 25vw;
+  top: -22vw;
+  left: 15vw;
   font-size: 64px;
   animation: faderight ease-in 4s infinite;
-  animation-delay: 9s;
-}
-#eqn2 {
-  position: absolute;
-  opacity: 0;
-  width: 20vw;
-  top: -8vw;
-  left: 2vw;
-  font-size: 64px;
-  animation: faderight ease-out 8s infinite;
   animation-delay: 4s;
 }
-#calabi {
-  position: absolute;
+#momMat {
+  display: flex;
+  position: relative;
   opacity: 0;
-  top: -10vw;
-  right: 5vw;
-  width: 10vw;
+  width: 20vw;
+  bottom: -8vw;
+  left: 5vw;
+  font-size: 64px;
   animation: faderight ease-out 5s infinite;
-  animation-delay: 7s;
+  animation-delay: 5s;
+  z-index: -1;
+}
+#calabi {
+  display: flex;
+  position: relative;
+  opacity: 0;
+  top: -25vw;
+  left: 75vw;
+  width: 10vw;
+  animation: faderight ease-out 6s infinite;
+  animation-delay: 6s;
 }
 #feynmann {
-  position: absolute;
+  display: flex;
+  position: relative;
   opacity: 0;
-  top: 5vw;
-  right: 2vw;
+  bottom: 10vw;
+  left: 60vw;
   width: 10vw;
-  animation: faderight ease-out 10s infinite;
-  animation-delay: 9s;
+  animation: faderight ease-out 7s infinite;
+  animation-delay: 7s;
+  z-index: -1;
 }
 .button1 {
+    display: flex;
     position: absolute;
     top: 250px;
-    left: 70vw;
-    display: block;
+    right: 20vw;
     margin-left: auto;
     margin-right: auto;
     border: none;
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: 100%;
-    min-width: 10%;
-    max-width: 10%;
+    width: auto;
+    min-width: 5%;
+    max-width: 5%;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #ffffff /*#008cef*/;
-    overflow-wrap: break-word;
+    overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
     -moz-animation: fade 7s; /* Firefox */
@@ -131,24 +155,24 @@ h3 {
     color: #000000;
 }
 .button2 {
+    display: flex;
     position: absolute;
     top: 250px;
-    left: 16vw;
-    display: block;
+    left: 20vw;
     margin-left: auto;
     margin-right: auto;
     border: none;
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: 90%;
-    min-width: 10%;
-    max-width: 10%;
+    width: auto;
+    min-width: 5%;
+    max-width: 5%;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #ffffff /*#008cef*/;
-    overflow-wrap: break-word;
+    overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
     -moz-animation: fade 7s; /* Firefox */
@@ -167,12 +191,22 @@ a {
   src: url('https://fonts.googleapis.com/css?family=Merriweather'); 
   font-weight: bold;
 }
+@keyframes fadeo {
+  0%{
+    transform: scaleY(1.7);
+    opacity:0;
+  }
+  100%{
+    transform: scaleY(1.7);
+    opacity:0.1;
+  }
+}
 @keyframes faderight {
   0%{
     opacity:0;
   }
   50%{
-    opacity:0.4;
+    opacity:0.2;
   }
   100%{
     opacity:0;
