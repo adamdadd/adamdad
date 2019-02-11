@@ -1,14 +1,15 @@
 <template>
     <div id="aboutme">
     <h2 id="AboutMe">Who On Earth is <span class="name">Adam Dad</span>?</h2>
-    <ul>
-        <li> Astrophysics Student at University of Liverpool.</li>
+    <p>
+         Astrophysics Student at University of Liverpool.
         <br/>
-            <li> Passionate About Problem Solving.</li>
-    </ul>
-    <img src="../assets/avatar.png" alt="Just Me">
-    <a href="/" style="text-decoration: none"><span class="buttonh" role="button">Home</span></a>
-    <a href="/experience" style="text-decoration: none"><span class="buttonb" role="button">Beyond!</span></a>
+         Passionate About Problem Solving.
+    </p>
+    <img id="avatar" src="../assets/avatar.png" alt="Just Me">
+    <a href="/experience" style="text-decoration: none"><span class="buttonh" role="button">
+            <img src="../assets/launch.png" style="width: 32px"/>
+    </span></a>
     </div>
 </template>
 
@@ -26,59 +27,56 @@ h2 {
     -o-animation: fade 2s; /* Opera */
     font-family: 'Merriweather', serif;
     position: absolute;
-    top: 0%;
-    left: 4%;
-    padding-top: 15%;
+    top: 10vw;
+    left: 5vw;
     text-align: left;
     font-size: 36px;
     color: #000000;
 }
 .name {
-    color: #ff4e0f;
+    opacity: 0.4 /*#ff4e0f*/;
 }
-ul {
+p {
     position: relative;
     text-align: left;
-    font-size: 24px;
-    top: 300px;
-    left: 50px;
-    width: 40%;
+    font-size: 16px;
+    top: 24vw;
+    left: 5vw;
+    width: 80vw;
     color: #000000;
-    animation: fade 5s;
-    -moz-animation: fade 5s; /* Firefox */
-    -webkit-animation: fade 5s; /* Safari and Chrome */
-    -o-animation: fade 5s; /* Opera */
+    animation: fade 1s;
+    -moz-animation: fade 1s; /* Firefox */
+    -webkit-animation: fade 1s; /* Safari and Chrome */
+    -o-animation: fade 1s; /* Opera */
 }
-img {
+#avatar {
+    display: flex;
     position: absolute;
-    align: right;
-    top: 25vw;
-    right: 50px;
-    width: 20%;
+    top: 30vw;
+    right: -10vw;
+    width: 30vw;
     border-radius: 50%;
-    animation: fade 10s;
-    -moz-animation: fade 10s; /* Firefox */
-    -webkit-animation: fade 10s; /* Safari and Chrome */
-    -o-animation: fade 10s; /* Opera */
+    animation: fadeLeft 2s;
+    -moz-animation: fadeLeft 2s; /* Firefox */
+    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
+    -o-animation: fadeLeft 2s; /* Opera */
 }
 a {
     outline: 0;
 }
 .buttonh {
-    position: relative;
-    top: 500px;
-    left: -675px;
-    display: block;
+    position: fixed;
+    bottom: 12vw;
+    left: 72vw;
+    display: inline-table;
     margin-left: auto;
     margin-right: auto;
     border: none;
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: 10%;
-    font-size: 24px;
+    width: 5%;
     font-family: 'Merriweather', serif;
-    text-align: center;
     background-color: #000000/*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
@@ -89,48 +87,76 @@ a {
     background-color: #ffffff /*#ff4e0f*/;
     color: #000000;
 }
-.buttonb {
-    position: relative;
-    top: -200px;
-    left: 675px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    color: #ffffff;
-    border-radius: 24px;
-    padding: 15px 32px;
-    width: 10%;
-    font-size: 24px;
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    background-color: #000000 /*#008cef*/;
-    box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
-    animation: fade 5s;
-    -moz-animation: fade 7s; /* Firefox */
-    -webkit-animation: fade 7s; /* Safari and Chrome */
+@keyframes fadeLeft {
+   0% {
+       transform: translateX(10px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
 }
-.buttonb:hover {
-    background-color: #ffffff /*#ff4e0f*/;
-    color: #000000;
+@-moz-keyframes fadeLeft { /* Firefox */
+   0% {
+       transform: translateX(10px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
+}
+@-webkit-keyframes fadeLeft { /* Safari and Chrome */
+   0% {
+       transform: translateX(10px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
+}
+@-o-keyframes fadeLeft { /* Opera */
+   0% {
+       transform: translateX(10px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
 }
 @keyframes fade {
-   0% {opacity:0;}
-   100% {opacity:1;}
+   0% {
+       opacity:0;
+   }
+   100% {
+       opacity:1;
+   }
 }
-
-@-moz-keyframes fade { /* Firefox */
-   0% {opacity:0;}
-   100% {opacity:1;}
+@-moz-keyframes fade {
+   0% {
+       opacity:0;
+   }
+   100% {
+       opacity:1;
+   }
 }
-
-@-webkit-keyframes fade { /* Safari and Chrome */
-   0% {opacity:0;}
-   100% {opacity:1;}
+@-webkit-keyframes fade {
+   0% {
+       opacity:0;
+   }
+   100% {
+       opacity:1;
+   }
 }
-
-@-o-keyframes fade { /* Opera */
-   0% {opacity:0;}
-   100% {opacity:1;}
+@-o-keyframes fade {
+   0% {
+       opacity:0;
+   }
+   100% {
+       opacity:1;
+   }
 }
 </style>
