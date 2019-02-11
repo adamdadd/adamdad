@@ -62,4 +62,17 @@ export default {
   -moz-transition: opacity 5s ease;
   opacity: 0;
 }
+@viewport {
+    width: device-width;
+    initial-scale: 1;
+    zoom: 1;
+    min-zoom: 1;
+    max-zoom: 3;
+    user-zoom: fixed;
+}
+@media screen and (max-width:400px) {
+    @-ms-viewport{
+        width:320px;
+    }
+}
 </style>

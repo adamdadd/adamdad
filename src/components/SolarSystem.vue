@@ -40,7 +40,7 @@ body {
   overflow-x:hidden;
   background-image: #ffffff; /* radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
   background-size: cover;
-  min-height: 100vw;
+  max-height: 100vw;
   min-width: 100vw;
 }
 
@@ -48,10 +48,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
+  width: screen.width;
   height: 100%;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
 }
 
 .sun {
