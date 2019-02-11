@@ -229,12 +229,12 @@ a {
 }
 @keyframes fadeo {
   0%{
-    transform: scaleY(1.7);
+    transform: scaleY(2);
     opacity:0;
   }
   100%{
-    transform: scaleY(1.7);
-    opacity:0.1;
+    transform: scaleY(2);
+    opacity:0.15;
   }
 }
 @keyframes faderight {
