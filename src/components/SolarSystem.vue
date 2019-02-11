@@ -48,7 +48,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);

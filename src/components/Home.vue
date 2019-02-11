@@ -79,7 +79,7 @@ h3 {
     opacity: 0.1;
     top: -20vw;
     left: 0vw;
-    transform: scaleY(1.7);
+    transform: scaleY(2);
     width: 100vw;
     animation: fadeo 5s ;
     z-index: -1;
@@ -148,6 +148,8 @@ h3 {
     background-color: #ffffff /*#008cef*/;
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
     animation: fade 5s;
     -moz-animation: fade 7s; /* Firefox */
     -webkit-animation: fade 7s; /* Safari and Chrome */
@@ -178,6 +180,8 @@ h3 {
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
     -moz-animation: fade 7s; /* Firefox */
     -webkit-animation: fade 7s; /* Safari and Chrome */
 }
