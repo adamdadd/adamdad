@@ -36,12 +36,12 @@
 </template>
 
 <style>
-html {
-  overflow-x:hidden;
-}
 body {
+  overflow-x:hidden;
   background-image: #ffffff; /* radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
   background-size: cover;
+}
+html {
 }
 
 .system {
