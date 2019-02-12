@@ -42,6 +42,9 @@ body {
   background-size: cover;
   max-width: 1900px;
 }
+html {
+  overflow-x:hidden;
+}
 
 .system {
   position: absolute;
