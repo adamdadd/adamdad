@@ -1,6 +1,8 @@
 <template>
     <div id="aboutme">
-    <h2 id="AboutMe">Who On Earth is <span class="name">Adam Dad</span>?</h2>
+    <h2 id="who">Who On Earth is <span class="name">Adam Dad</span>?</h2>
+    <br/>
+    <div id="square"></div>
     <p>
          Astrophysics Student at University of Liverpool.
         <br/>
@@ -20,7 +22,17 @@ export default {
 </script>
 
 <style scoped>
-h2 {
+#square {
+    display: inline-block;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.2;
+    top: 0px;
+    left: 0vw;
+    padding: 200px 100vw 100vw;
+    transition: ease-in 4s;
+}
+#who {
     animation: fade 2s;
     -moz-animation: fade 2s; /* Firefox */
     -webkit-animation: fade 2s; /* Safari and Chrome */
@@ -29,6 +41,7 @@ h2 {
     position: absolute;
     top: 10vw;
     left: 5vw;
+    max-width:80vw;
     text-align: left;
     font-size: 36px;
     color: #000000;
@@ -39,8 +52,8 @@ h2 {
 p {
     position: relative;
     text-align: left;
-    font-size: 16px;
-    top: 24vw;
+    font-size: 18px;
+    top: 200px;
     left: 5vw;
     width: 80vw;
     color: #000000;
@@ -66,8 +79,8 @@ a {
 }
 .buttonh {
     position: fixed;
-    bottom: 12vw;
-    left: 72vw;
+    bottom: 4vw;
+    right: 86vw;
     display: inline-table;
     margin-left: auto;
     margin-right: auto;
@@ -79,9 +92,9 @@ a {
     font-family: 'Merriweather', serif;
     background-color: #000000/*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
-    animation: fade 5s;
-    -moz-animation: fade 7s; /* Firefox */
-    -webkit-animation: fade 7s; /* Safari and Chrome */
+    animation: fadeRight 2s;
+    -moz-animation: fadeRight 2s; /* Firefox */
+    -webkit-animation: fadeRight 2s; /* Safari and Chrome */
 }
 .buttonh:hover {
     background-color: #ffffff /*#ff4e0f*/;
@@ -89,7 +102,7 @@ a {
 }
 @keyframes fadeLeft {
    0% {
-       transform: translateX(10px);
+       transform: translateX(20px);
        opacity:0;
    }
    100% {
@@ -99,7 +112,7 @@ a {
 }
 @-moz-keyframes fadeLeft { /* Firefox */
    0% {
-       transform: translateX(10px);
+       transform: translateX(20px);
        opacity:0;
    }
    100% {
@@ -109,7 +122,7 @@ a {
 }
 @-webkit-keyframes fadeLeft { /* Safari and Chrome */
    0% {
-       transform: translateX(10px);
+       transform: translateX(20px);
        opacity:0;
    }
    100% {
@@ -119,7 +132,47 @@ a {
 }
 @-o-keyframes fadeLeft { /* Opera */
    0% {
-       transform: translateX(10px);
+       transform: translateX(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
+}
+@keyframes fadeRight {
+   0% {
+       transform: translateX(-20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
+}
+@-moz-keyframes fadeRight { /* Firefox */
+   0% {
+       transform: translateX(-20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
+}
+@-webkit-keyframes fadeLeft { /* Safari and Chrome */
+   0% {
+       transform: translateX(-20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateX(0px);
+       opacity:1;
+   }
+}
+@-o-keyframes fadeLeft { /* Opera */
+   0% {
+       transform: translateX(-20px);
        opacity:0;
    }
    100% {

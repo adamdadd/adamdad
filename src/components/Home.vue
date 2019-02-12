@@ -139,9 +139,7 @@ h3 {
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: auto;
-    min-width: 5%;
-    max-width: 5%;
+    width: 5vw;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -170,14 +168,11 @@ h3 {
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: auto;
-    min-width: 5%;
-    max-width: 5%;
+    width: 5vw;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #ffffff /*#008cef*/;
-    overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -201,15 +196,11 @@ h3 {
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: auto;
-    min-width: 5%;
-    max-width: 5%;
+    width: 5vw;
     max-height: 64px;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
-    text-align: center;
     background-color: #000000 /*#008cef*/;
-    overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
     animation: fade 5s;
     -moz-animation: fade 7s; /* Firefox */
