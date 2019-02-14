@@ -58,7 +58,7 @@ body {
   top: 1066.6666666667px;
   left: 50%;
   margin: -72px;
-  background-image: radial-gradient(#ff5e0f 40%, transparent 60%);
+  background-image: radial-gradient(#d2b98c /*#ff5e0f*/ 40%, transparent 60%);
   background-size: 144px;
   background-repeat: no-repeat;
 }

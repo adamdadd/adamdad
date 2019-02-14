@@ -28,9 +28,10 @@ export default {
     background-color: #000000;
     opacity: 0.2;
     top: 0px;
-    left: 0vw;
-    padding: 200px 100vw 100vw;
+    left: 0px;
+    padding: 500px 1000px 100vw;
     transition: ease-in 4s;
+    z-index: -1;
 }
 #who {
     animation: fade 2s;
@@ -78,9 +79,9 @@ a {
     outline: 0;
 }
 .buttonh {
-    position: fixed;
-    bottom: 4vw;
-    right: 86vw;
+    position: relative;
+    top: 500px;
+    left: 0vw;
     display: inline-table;
     margin-left: auto;
     margin-right: auto;
