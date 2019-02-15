@@ -11,7 +11,7 @@
     <a href="https://github.com/adamdadd" style= "text-decoration: none"><span class="button1" role="button">
             <img src="../assets/GitHub-Mark-64px.png" style="width: 32px"/>
         </span></a>
-    <a href="https://www.linkedin.com/in/adam-dad/" style= "text-decoration: none"><span class="button2" role="button">
+    <a href="https://www.linkedin.com/in/adamdad/" style= "text-decoration: none"><span class="button2" role="button">
             <img src="../assets/In-Black-66px-R.png" style="width:32px" />
         </span></a>
     <a href="/about" style= "text-decoration: none"><span class="button_launch" role="button">
@@ -52,17 +52,17 @@ h1 {
   opacity: 0.5;
   color: #000000 /*#ff4e0f*/;
   margin: 64px 0 0;
-  animation: fadedown 4s;
-  animation: glitch 5s infinite;
-  -moz-animation: fadeDown 4s; /* Firefox */
-  -webkit-animation: fadeDown 4s; /* Safari and Chrome */
-  -o-animation: fadeDown 4s; /* Opera */
+  animation: fadedown 2s;
+  -moz-animation: fadeDown 2s; /* Firefox */
+  -webkit-animation: fadeDown 2s; /* Safari and Chrome */
+  -o-animation: fadeDown 2s; /* Opera */
 }
 h2 {
   position: relative;
   top: 40px;
   font-family: 'Merriweather', serif;
   text-align: center;
+  outline: #ffffff;
   color: #000000/*#ffffff*/;
   font-style: normal;
   animation: fade 10s;
@@ -139,18 +139,17 @@ h3 {
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: 5vw;
+    width: auto;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #ffffff /*#008cef*/;
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
-    animation: fade 5s;
-    -moz-animation: fade 7s; /* Firefox */
-    -webkit-animation: fade 7s; /* Safari and Chrome */
+    animation: fadeUp 2s;
+    -moz-animation: fadeUp 2s; /* Firefox */
+    -webkit-animation: fadeUp 2s; /* Safari and Chrome */
 }
 .button1:hover {
     outline: 0;
@@ -168,17 +167,16 @@ h3 {
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: 5vw;
+    width: auto;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #ffffff /*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
-    animation: fade 5s;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
-    -moz-animation: fade 7s; /* Firefox */
-    -webkit-animation: fade 7s; /* Safari and Chrome */
+    animation: fadeUp 2s;
+    -moz-animation: fadeUp 2s; /* Firefox */
+    -webkit-animation: fadeUp 2s; /* Safari and Chrome */
 }
 .button2:hover {
     outline: 0;
@@ -196,15 +194,16 @@ h3 {
     color: #ffffff;
     border-radius: 24px;
     padding: 15px 32px;
-    width: 5vw;
+    width: 5%;
     max-height: 64px;
     font-size: 1.75vw;
     font-family: 'Merriweather', serif;
     background-color: #000000 /*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
-    animation: fade 5s;
-    -moz-animation: fade 7s; /* Firefox */
-    -webkit-animation: fade 7s; /* Safari and Chrome */
+    animation: fadeUp 2s;
+    -moz-animation: fadeUp 2s; /* Firefox */
+    -webkit-animation: fadeUp 2s; /* Safari and Chrome */
+    -o-animation: fadeUp 2s;
 }
 .button_launch:hover {
     outline: 0;
@@ -218,6 +217,46 @@ a {
   src: url('https://fonts.googleapis.com/css?family=Merriweather'); 
   font-weight: bold;
 }
+@keyframes fadeUp {
+   0% {
+       transform: translateY(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateY(0px);
+       opacity:1;
+   }
+}
+@-moz-keyframes fadeUp { /* Firefox */
+   0% {
+       transform: translateY(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateY(0px);
+       opacity:1;
+   }
+}
+@-webkit-keyframes fadeUp {
+   0% {
+       transform: translateY(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateY(0px);
+       opacity:1;
+   }
+}
+@-o-keyframes fadeUp { /* Opera */
+   0% {
+       transform: translateY(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateY(0px);
+       opacity:1;
+   }
+}
 @keyframes fadeo {
   0%{
     transform: scaleY(2);
@@ -226,17 +265,6 @@ a {
   100%{
     transform: scaleY(2);
     opacity:0.15;
-  }
-}
-@keyframes faderight {
-  0%{
-    opacity:0;
-  }
-  50%{
-    opacity:0.2;
-  }
-  100%{
-    opacity:0;
   }
 }
 @keyframes fadedown{
@@ -287,21 +315,21 @@ a {
 }
 @keyframes fade {
    0% {opacity:0;}
-   100% {opacity:1;}
+   100% {opacity:0.8;}
 }
 
 @-moz-keyframes fade { /* Firefox */
    0% {opacity:0;}
-   100% {opacity:1;}
+   100% {opacity:0.8;}
 }
 
 @-webkit-keyframes fade { /* Safari and Chrome */
    0% {opacity:0;}
-   100% {opacity:1;}
+   100% {opacity:0.8;}
 }
 
 @-o-keyframes fade { /* Opera */
    0% {opacity:0;}
-   100% {opacity:1;}
+   100% {opacity:0.8;}
 }
 </style>

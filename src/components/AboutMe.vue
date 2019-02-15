@@ -1,13 +1,22 @@
 <template>
     <div id="aboutme">
     <h2 id="who">Who On Earth is <span class="name">Adam Dad</span>?</h2>
-    <br/>
     <div id="square"></div>
-    <p>
-         Astrophysics Student at University of Liverpool.
-        <br/>
-         Passionate About Problem Solving.
-    </p>
+    <sunburst :data="data">
+
+  <!-- Add behaviors -->
+        <template slot-scope="{ nodes, actions }">
+            <highlightOnHover :nodes="nodes" :actions="actions" />
+            <zoomOnClick :nodes="nodes" :actions="actions" />
+        </template>
+
+  <!-- Add information to be displayed on top the graph -->
+        <nodeInfoDisplayer slot="top" slot-scope="{ nodes }" :current="nodes.mouseOver" :root="nodes.root" description="of visits begin with this sequence of pages" />
+
+  <!-- Add bottom legend -->
+        <breadcrumbTrail slot="legend" slot-scope="{ nodes, colorGetter, width }" :current="nodes.mouseOver" :root="nodes.root" :colorGetter="colorGetter" :from="nodes.clicked" :width="width" />
+
+    </sunburst>
     <img id="avatar" src="../assets/avatar.png" alt="Just Me">
     <a href="/experience" style="text-decoration: none"><span class="buttonh" role="button">
             <img src="../assets/launch.png" style="width: 32px"/>
@@ -16,8 +25,63 @@
 </template>
 
 <script>
+import {
+  breadcrumbTrail,
+  highlightOnHover,
+  nodeInfoDisplayer,
+  sunburst,
+  zoomOnClick
+} from 'vue-d3-sunburst';
+import "vue-d3-sunburst/dist/vue-d3-sunburst.css";
+
 export default {
-    name: "AboutMe"
+    name: "AboutMe",
+    components: {
+    breadcrumbTrail,
+    highlightOnHover,
+    nodeInfoDisplayer,
+    sunburst,
+    zoomOnClick
+  },
+  data() {
+    return {
+      tree:  {
+      "name": "flare",
+        "children": [
+          {
+            "name": "analytics",
+            "children": [
+              {
+                "name": "cluster",
+                "children": [
+                  { "name": "AgglomerativeCluster", "size": 3938 },
+                  { "name": "CommunityStructure", "size": 3812 },
+                  { "name": "HierarchicalCluster", "size": 6714 },
+                  { "name": "MergeEdge", "size": 743 }
+                ]
+              },
+              {
+                "name": "graph",
+                "children": [
+                  { "name": "BetweennessCentrality", "size": 3534 },
+                  { "name": "LinkDistance", "size": 5731 },
+                  { "name": "MaxFlowMinCut", "size": 7840 },
+                  { "name": "ShortestPaths", "size": 5914 },
+                  { "name": "SpanningTree", "size": 3416 }
+                ]
+              },
+              {
+                "name": "optimization",
+                "children": [
+                  { "name": "AspectRatioBanker", "size": 7074 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
 }
 </script>
 
@@ -93,31 +157,51 @@ a {
     font-family: 'Merriweather', serif;
     background-color: #000000/*#008cef*/;
     box-shadow: 0 8px 16px 0 rgba(99,99,99,0.2), 0 6px 20px 0 rgba(99,99,99,0.19);
-    animation: fadeRight 2s;
-    -moz-animation: fadeRight 2s; /* Firefox */
-    -webkit-animation: fadeRight 2s; /* Safari and Chrome */
+    animation: fadeUp 2s;
+    -moz-animation: fadeUp 2s; /* Firefox */
+    -webkit-animation: fadeUp 2s; /* Safari and Chrome */
 }
 .buttonh:hover {
     background-color: #ffffff /*#ff4e0f*/;
     color: #000000;
 }
-@keyframes fadeLeft {
+@keyframes fadeUp {
    0% {
-       transform: translateX(20px);
+       transform: translateY(20px);
        opacity:0;
    }
    100% {
-       transform: translateX(0px);
+       transform: translateY(0px);
        opacity:1;
    }
 }
-@-moz-keyframes fadeLeft { /* Firefox */
+@-moz-keyframes fadeUp { /* Firefox */
    0% {
-       transform: translateX(20px);
+       transform: translateY(20px);
        opacity:0;
    }
    100% {
-       transform: translateX(0px);
+       transform: translateY(0px);
+       opacity:1;
+   }
+}
+@-webkit-keyframes fadeUp { /* Safari and Chrome */
+   0% {
+       transform: translateY(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateY(0px);
+       opacity:1;
+   }
+}
+@-o-keyframes fadeUp { /* Opera */
+   0% {
+       transform: translateY(20px);
+       opacity:0;
+   }
+   100% {
+       transform: translateY(0px);
        opacity:1;
    }
 }
@@ -134,46 +218,6 @@ a {
 @-o-keyframes fadeLeft { /* Opera */
    0% {
        transform: translateX(20px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@keyframes fadeRight {
-   0% {
-       transform: translateX(-20px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@-moz-keyframes fadeRight { /* Firefox */
-   0% {
-       transform: translateX(-20px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@-webkit-keyframes fadeLeft { /* Safari and Chrome */
-   0% {
-       transform: translateX(-20px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@-o-keyframes fadeLeft { /* Opera */
-   0% {
-       transform: translateX(-20px);
        opacity:0;
    }
    100% {
