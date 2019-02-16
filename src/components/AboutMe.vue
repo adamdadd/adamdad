@@ -14,9 +14,7 @@
         I have had many interesting experiences along the way.
     </p>
     <aboutChart id="chart"/>
-    <div id="avatar">
-        <img src="../assets/avatar.png" alt="Just Me" />
-    </div>
+    <img id="avatar" src="../assets/avatar.png" alt="Just Me" />
     <a href="/experience" style="text-decoration: none">
         <span class="buttonh" role="button">
             <img src="../assets/launch.png" style="width: 32px"/>
@@ -43,7 +41,7 @@ export default {
     width: 25vw;
     min-width: 200px;
     max-width: 300px;
-    bottom: 2vw;
+    bottom: -5vw;
     right: 0vw;
     animation: fadeLeft 2s;
     -moz-animation: fadeLeft 2s; /* Firefox */
@@ -118,7 +116,7 @@ a {
 }
 .buttonh {
     position: relative;
-    top: 320px;
+    top: 300px;
     left: 0vw;
     display: inline-table;
     margin-left: auto;
