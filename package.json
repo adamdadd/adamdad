@@ -10,12 +10,14 @@
   "dependencies": {
     "ajv": "^6.8.1",
     "ajv-keywords": "^3.3.0",
+    "chart.js": "^2.7.3",
     "d3": "^5.9.1",
     "express": "^4.16.4",
     "npm": "^6.7.0",
     "path": "^0.12.7",
     "vue": "^2.5.21",
     "vue-burger-menu": "^2.0.0",
+    "vue-chartjs": "^3.4.0",
     "vue-d3-sunburst": "^0.2.0",
     "vue-router": "^3.0.2"
   },
