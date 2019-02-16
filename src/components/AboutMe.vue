@@ -41,8 +41,8 @@ export default {
     width: 25vw;
     min-width: 200px;
     max-width: 300px;
-    bottom: -5vw;
-    right: 0vw;
+    bottom: 0vw;
+    right: -1vw;
     animation: fadeLeft 2s;
     -moz-animation: fadeLeft 2s; /* Firefox */
     -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
@@ -116,7 +116,7 @@ a {
 }
 .buttonh {
     position: relative;
-    top: 300px;
+    bottom: -25vw;
     left: 0vw;
     display: inline-table;
     margin-left: auto;
