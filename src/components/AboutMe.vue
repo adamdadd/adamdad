@@ -5,16 +5,16 @@
     <p>
         I'm currently an Astrophysics student in my penultimate year of an MPhys degree.
         <br />
-        Along the way I have worked on many projects, 
+        Along the way I have worked on many projects,
         <br />
-        whether it's a 40% increase in student intake under my presidency 
+        whether it's a 40% increase in student intake under my presidency,
         <br />
-        or working on a project with Unilever,
+         working on data visualisation of big data automated robots.
         <br />
-        I have had many interesting experiences along the way.
+        I have had many interesting experiences and gained valuable skills along the way.
     </p>
-    <aboutChart id="chart"/>
     <img id="avatar" src="../assets/avatar.png" alt="Just Me" />
+    <aboutChart id="chart"/>
     <a href="/experience" style="text-decoration: none">
         <span class="buttonh" role="button">
             <img src="../assets/launch.png" style="width: 32px"/>
@@ -41,8 +41,8 @@ export default {
     width: 25vw;
     min-width: 200px;
     max-width: 300px;
-    bottom: 0vw;
-    right: -1vw;
+    bottom: 100px;
+    right: 2vw;
     animation: fadeLeft 2s;
     -moz-animation: fadeLeft 2s; /* Firefox */
     -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
@@ -101,9 +101,9 @@ p {
     display: flex;
     position: absolute;
     overflow: hidden;
-    top: 4vw;
+    top: 100px;
     right: -10vw;
-    width: 25vw;
+    width: 20vw;
     min-width: 200px;
     border-radius: 100vw;
     animation: fadeLeft 2s;
@@ -115,10 +115,10 @@ a {
     outline: 0;
 }
 .buttonh {
-    position: relative;
-    bottom: -25vw;
-    left: 0vw;
     display: inline-table;
+    position: absolute;
+    bottom: 1vw;
+    left: 45vw;
     margin-left: auto;
     margin-right: auto;
     border: none;

@@ -17,13 +17,14 @@ export default {
 
 <style scoped>
 #square {
-    display: inline-block;
+    display: flex;
     position: absolute;
     background-color: #000000;
     opacity: 0.2;
     top: 0px;
-    left: 0vw;
-    padding: 500px 500px 100vw;
+    left: 0px;
+    padding: 500px 500px;
+    width: 45vw;
     transition: ease-in 4s;
     z-index: -1;
 }
