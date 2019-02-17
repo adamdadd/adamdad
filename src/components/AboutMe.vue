@@ -84,11 +84,11 @@ export default {
 p {
     position: relative;
     text-align: left;
-    font-size: 22px;
+    font-size: 20px;
     word-wrap: break-word;
     top: 200px;
     left: 5vw;
-    width: 60vw;
+    width: 50vw;
     color: #ffffff;
     background-color: #000000;
     opacity: 0.8;
@@ -116,9 +116,9 @@ a {
 }
 .buttonh {
     display: inline-table;
-    position: absolute;
-    bottom: 1vw;
-    left: 45vw;
+    position: relative;
+    bottom: -275px;
+    left: 0vw;
     margin-left: auto;
     margin-right: auto;
     border: none;
