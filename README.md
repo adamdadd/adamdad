@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/adamdadd/adamdad/badge)](https://www.codefactor.io/repository/github/adamdadd/adamdad)
 # adamdad
 
 Personal website developed using vuejs.
