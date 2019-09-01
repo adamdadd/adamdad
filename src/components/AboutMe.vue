@@ -3,18 +3,18 @@
     <div id="square"></div>
     <h2 id="who">Who On Earth is <span class="name">Adam Dad</span>?</h2>
     <p>
-        I'm currently an Astrophysics student in my penultimate year of an MPhys degree.
+        <br/>
+        Currently a final year masters student in astrophysics 
+        at the University of Liverpool. (Grad. 2020)
         <br />
-        Along the way I have worked on many projects,
         <br />
-        whether it's a 40% increase in student intake under my presidency,
-        <br />
-         working on data visualisation of big data automated robots.
-        <br />
-        I have had many interesting experiences and gained valuable skills along the way.
+        The best part of working in research is pushing 
+        on the edges of our understanding of the world around us.
+        <br/>
+        <br/>
+        I look forward to learning something new everyday.
     </p>
     <img id="avatar" src="../assets/avatar.png" alt="Just Me" />
-    <aboutChart id="chart"/>
     <a href="/experience" style="text-decoration: none">
         <span class="buttonh" role="button">
             <img src="../assets/launch.png" style="width: 32px"/>
@@ -24,30 +24,15 @@
 </template>
 
 <script>
-import aboutChart from './aboutChart.vue'
 
 export default {
     name: "AboutMe",
     components: {
-        aboutChart
     }
 }
 </script>
 
 <style scoped>
-#chart {
-    display: inline-block;
-    position: absolute;
-    width: 25vw;
-    min-width: 200px;
-    max-width: 300px;
-    bottom: 100px;
-    right: 2vw;
-    animation: fadeLeft 2s;
-    -moz-animation: fadeLeft 2s; /* Firefox */
-    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
-    -o-animation: fadeLeft 2s; /* Opera */
-}
 #square {
     display: flex;
     position: absolute;
@@ -55,8 +40,8 @@ export default {
     opacity: 0.2;
     top: 0px;
     left: 0px;
-    padding: 500px 500px;
-    width: 45vw;
+    padding: 540px 1080px;
+    width: 5vw;
     transition: ease-in 4s;
     z-index: -1;
 }
@@ -84,9 +69,10 @@ export default {
 p {
     position: relative;
     text-align: left;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     word-wrap: break-word;
-    top: 200px;
+    top: 240px;
     left: 5vw;
     width: 50vw;
     color: #ffffff;
@@ -101,9 +87,9 @@ p {
     display: flex;
     position: absolute;
     overflow: hidden;
-    top: 100px;
+    top: 400px;
     right: -10vw;
-    width: 20vw;
+    width: 30vw;
     min-width: 200px;
     border-radius: 100vw;
     animation: fadeLeft 2s;

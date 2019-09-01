@@ -2,6 +2,10 @@
     <div id="aboutme">
     <div id="square"></div>
     <h2 id="Exp"> My <span class="name">Experience</span> </h2>
+    <vuetable ref="vuetable" 
+        api-url="..\..\public\data.json"
+        :fields="['name', 'email', 'birthdate']"
+    ></vuetable>
     <img id="avatar" src="../assets/avatar.png" alt="Just Me">
     <a href="/" style="text-decoration: none"><span class="buttonh" role="button">
             <img src="../assets/launch.png" style="width: 32px"/>
@@ -10,8 +14,13 @@
 </template>
 
 <script>
+import Vuetable from 'vuetable-2/src/components/Vuetable';
+
 export default {
-    name: "Experience"
+    name: "Experience",
+    components: {
+        Vuetable
+    }
 }
 </script>
 
@@ -23,8 +32,8 @@ export default {
     opacity: 0.2;
     top: 0px;
     left: 0px;
-    padding: 500px 500px;
-    width: 45vw;
+    padding: 540px 1080px;
+    width: 5vw;
     transition: ease-in 4s;
     z-index: -1;
 }

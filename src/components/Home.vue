@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div id="square"></div>
     <h1>Adam Dad</h1>
     <h2>
         <span>
@@ -18,7 +19,7 @@
             <img src="../assets/launch.png" style="width:32px" />
         </span></a>
     <picture>
-        <source id="overlay" srcset="../assets/spacetime.png" media="(max-width: 800px)">
+        <source id="overlay" srcset="../assets/spacetime.png" media="(max-width: 80px)">
         <img id="overlay" src="../assets/overlay.png" />
     </picture>
     <img id="genRel" src="../assets/einfield.svg" border="0"/>
@@ -44,6 +45,16 @@ export default {
 div.home {
     position: relative;
     top: 150px;
+}
+#square {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.2;
+    top: 0px;
+    left: 23vw;
+    padding: 120px 18px;
+    width: 50vw;
+    z-index: -1;
 }
 h1 {
   font-family: 'Merriweather', serif;
@@ -76,10 +87,10 @@ h3 {
 #overlay {
     display: flex;
     position: absolute;
-    opacity: 0.1;
+    opacity: 0.25;
     top: -20vw;
     left: 0vw;
-    transform: scaleY(2);
+    transform: scaleY(1);
     width: 100vw;
     animation: fadeo 5s ;
     z-index: -1;
@@ -87,8 +98,8 @@ h3 {
 #genRel {
   display: flex;
   position: relative;
-  opacity: 0;
-  width: 25vw;
+  opacity: 0.1;
+  width: 40vw;
   top: -22vw;
   left: 15vw;
   font-size: 64px;
@@ -98,7 +109,7 @@ h3 {
 #momMat {
   display: flex;
   position: relative;
-  opacity: 0;
+  opacity: 0.3;
   width: 20vw;
   bottom: -8vw;
   left: 5vw;
@@ -110,7 +121,7 @@ h3 {
 #calabi {
   display: flex;
   position: relative;
-  opacity: 0;
+  opacity: 0.25;
   top: -25vw;
   left: 75vw;
   width: 10vw;
@@ -120,7 +131,7 @@ h3 {
 #feynmann {
   display: flex;
   position: relative;
-  opacity: 0;
+  opacity: 0.5;
   bottom: 10vw;
   left: 60vw;
   width: 10vw;
