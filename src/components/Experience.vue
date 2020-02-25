@@ -1,12 +1,16 @@
 <template>
     <div id="aboutme">
-    <div id="square"></div>
+    <!-- <div id="square"></div> -->
     <h2 id="Exp"> My <span class="name">Experience</span> </h2>
-    <vuetable ref="vuetable" 
+
+    <!-- <vuetable ref="vuetable" 
         api-url="..\..\public\data.json"
-        :fields="['name', 'email', 'birthdate']"
-    ></vuetable>
-    <img id="avatar" src="../assets/avatar.png" alt="Just Me">
+        :fields="['name', 'email', 'date']"
+    ></vuetable> -->
+
+    <img id="uni" src="../assets/Uni.jpg" alt="uni">
+    <img id="unilever" src="../assets/Unilever.jpg" alt="unilever">
+    <img id="hipy" src="../assets/hipy.jpg" alt="hipy">
     <a href="/" style="text-decoration: none"><span class="buttonh" role="button">
             <img src="../assets/launch.png" style="width: 32px"/>
     </span></a>
@@ -14,17 +18,58 @@
 </template>
 
 <script>
-import Vuetable from 'vuetable-2/src/components/Vuetable';
+// import Vuetable from 'vuetable-2/src/components/Vuetable';
 
 export default {
     name: "Experience",
     components: {
-        Vuetable
+        // Vuetable
     }
 }
 </script>
 
 <style scoped>
+#hipy {
+    display: flex;
+    position: relative;
+    top: 250px;
+    left: 65vw;
+    width: 30vw;
+    max-width: 300px;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fadeLeft 2s;
+    -moz-animation: fadeLeft 2s; /* Firefox */
+    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
+    -o-animation: fadeLeft 2s; /* Opera */
+}
+#unilever {
+    display: flex;
+    position: relative;
+    top: 250px;
+    left: 13vw;
+    width: 30vw;
+    max-width: 300px;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fadeLeft 2s;
+    -moz-animation: fadeLeft 2s; /* Firefox */
+    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
+    -o-animation: fadeLeft 2s; /* Opera */
+}
+#uni {
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 40vw;
+    width: 30vw;
+    max-width: 300px;
+    border-radius: 50%;
+    animation: fadeLeft 2s;
+    -moz-animation: fadeLeft 2s; /* Firefox */
+    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
+    -o-animation: fadeLeft 2s; /* Opera */
+}
 #square {
     display: flex;
     position: absolute;
@@ -66,25 +111,13 @@ p {
     -webkit-animation: fade 1s; /* Safari and Chrome */
     -o-animation: fade 1s; /* Opera */
 }
-#avatar {
-    display: flex;
-    position: absolute;
-    top: 30vw;
-    right: -10vw;
-    width: 30vw;
-    border-radius: 50%;
-    animation: fadeLeft 2s;
-    -moz-animation: fadeLeft 2s; /* Firefox */
-    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
-    -o-animation: fadeLeft 2s; /* Opera */
-}
 a {
     outline: 0;
 }
 .buttonh {
-    position: relative;
-    top: 500px;
-    left: 0vw;
+    position: absolute;
+    top: 600px;
+    left: 43vw;
     display: inline-table;
     margin-left: auto;
     margin-right: auto;

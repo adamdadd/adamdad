@@ -1,18 +1,11 @@
 <template>
     <div id="aboutme">
     <div id="square"></div>
-    <h2 id="who">Who On Earth is <span class="name">Adam Dad</span>?</h2>
+    <h2 id="who">About <span class="name"> Me</span></h2>
     <p>
+        "The best part of working in research is pushing 
+        on the edges of our understanding of the world around us."
         <br/>
-        Currently a final year masters student in astrophysics 
-        at the University of Liverpool. (Grad. 2020)
-        <br />
-        <br />
-        The best part of working in research is pushing 
-        on the edges of our understanding of the world around us.
-        <br/>
-        <br/>
-        I look forward to learning something new everyday.
     </p>
     <img id="avatar" src="../assets/avatar.png" alt="Just Me" />
     <a href="/experience" style="text-decoration: none">
@@ -46,9 +39,10 @@ export default {
     z-index: -1;
 }
 #who {
+    display: flex;
     font-family: 'Merriweather', serif;
     position: absolute;
-    top: 10vw;
+    top: 150px;
     left: 5vw;
     max-width:80vw;
     text-align: left;
@@ -67,7 +61,7 @@ export default {
     -o-animation: fadeRight 2s; /* Opera */
 }
 p {
-    position: relative;
+    position: absolute;
     text-align: left;
     font-size: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -87,11 +81,11 @@ p {
     display: flex;
     position: absolute;
     overflow: hidden;
-    top: 400px;
+    top: 350px;
     right: -10vw;
     width: 30vw;
     min-width: 200px;
-    border-radius: 100vw;
+    /* border-radius: 50px; */
     animation: fadeLeft 2s;
     -moz-animation: fadeLeft 2s; /* Firefox */
     -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
@@ -102,9 +96,9 @@ a {
 }
 .buttonh {
     display: inline-table;
-    position: relative;
-    bottom: -275px;
-    left: 0vw;
+    position: absolute;
+    top: 600px;
+    left: 43vw;
     margin-left: auto;
     margin-right: auto;
     border: none;

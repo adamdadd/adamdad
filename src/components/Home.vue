@@ -3,9 +3,10 @@
     <div id="square"></div>
     <h1>Adam Dad</h1>
     <h2>
-        <span>
-            RESEARCHER. DEVELOPER. INSTRUCTOR.
-        </span>
+        <span> ASTROPHYSICS GRADUATE </span>
+        <br/>
+        <span> SOFTWARE ENGINEER</span>
+        <br/>
     </h2>
     <br/>
     <br/>
@@ -47,20 +48,21 @@ div.home {
     top: 150px;
 }
 #square {
+    display: flex;
     position: absolute;
-    background-color: #000000;
+    background-color: #4d4b4b;
     opacity: 0.2;
     top: 0px;
-    left: 23vw;
+    left: 0px;
     padding: 120px 18px;
-    width: 50vw;
+    width: 100vw;
     z-index: -1;
 }
 h1 {
   font-family: 'Merriweather', serif;
   text-align: center;
   font-size: 64px;
-  opacity: 0.5;
+  opacity: 0.6;
   color: #000000 /*#ff4e0f*/;
   margin: 64px 0 0;
   animation: fadedown 2s;
@@ -70,19 +72,17 @@ h1 {
 }
 h2 {
   position: relative;
-  top: 40px;
+  top: 10px;
   font-family: 'Merriweather', serif;
   text-align: center;
-  outline: #ffffff;
-  color: #000000/*#ffffff*/;
+  outline: #000000;
+  opacity: 0.8;
+  color: #201900/*#ffffff*/;
   font-style: normal;
   animation: fade 10s;
   -moz-animation: fade 10s; /* Firefox */
   -webkit-animation: fade 10s; /* Safari and Chrome */
   -o-animation: fade 10s; /* Opera */
-}
-h3 {
-  margin: 40px 0 0;
 }
 #overlay {
     display: flex;
