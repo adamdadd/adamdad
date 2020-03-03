@@ -9,6 +9,7 @@
     ></vuetable> -->
 
     <img id="uni" src="../assets/Uni.jpg" alt="uni">
+    <img id="tutor" src="../assets/tutor.jpg" alt="tutor">
     <img id="unilever" src="../assets/Unilever.jpg" alt="unilever">
     <img id="hipy" src="../assets/hipy.jpg" alt="hipy">
     <a href="/" style="text-decoration: none"><span class="buttonh" role="button">
@@ -29,47 +30,96 @@ export default {
 </script>
 
 <style scoped>
+@-webkit-keyframes rot-hipy {
+  from {
+    -webkit-transform: rotate(0deg) translatey(-20vw) rotate(0deg);
+            transform: rotate(0deg) translatey(-20vw) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg) translatey(-20vw) rotate(360deg);
+            transform: rotate(-360deg) translatey(-20vw) rotate(360deg);
+  }
+}
+
 #hipy {
     display: flex;
-    position: relative;
-    top: 250px;
-    left: 65vw;
-    width: 30vw;
-    max-width: 300px;
+    position: absolute;
+    top: 300px;
+    left: 30vw;
+    width: 10vw;
+    max-width: 100px;
     opacity: 0.8;
     border-radius: 50%;
-    animation: fadeLeft 2s;
-    -moz-animation: fadeLeft 2s; /* Firefox */
-    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
-    -o-animation: fadeLeft 2s; /* Opera */
+    -moz-animation: rot-hipy 10s infinite linear;
+    -webkit-animation: rot-hipy 10s infinite linear;
 }
+
+@-webkit-keyframes rot-unilever {
+  from {
+    -webkit-transform: rotate(0deg) translatey(20vw) rotate(0deg);
+            transform: rotate(0deg) translatey(20vw) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg) translatey(20vw) rotate(360deg);
+            transform: rotate(-360deg) translatey(20vw) rotate(360deg);
+  }
+}
+
 #unilever {
     display: flex;
-    position: relative;
-    top: 250px;
-    left: 13vw;
-    width: 30vw;
-    max-width: 300px;
+    position: absolute;
+    top: 300px;
+    left: 30vw;
+    width: 20vw;
+    max-width: 200px;
     opacity: 0.8;
     border-radius: 50%;
-    animation: fadeLeft 2s;
-    -moz-animation: fadeLeft 2s; /* Firefox */
-    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
-    -o-animation: fadeLeft 2s; /* Opera */
+    -moz-animation: rot-unilever 10s infinite linear;
+    -webkit-animation: rot-unilever 10s infinite linear;
 }
+
+#tutor {
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 65vw;
+    width: 20vw;
+    max-width: 150px;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
 #uni {
     display: flex;
     position: absolute;
     top: 300px;
-    left: 40vw;
+    left: 25vw;
+    /* width: 30vw; */
+    width: 20vw;
+    height: 20vw;
+    max-width: 300px;
+    border-radius: 50%;
+    animation: fade 2s;
+    -moz-animation: fade 2s; /* Firefox */
+    -webkit-animation: fade 2s; /* Safari and Chrome */
+    -o-animation: fade 2s; /* Opera */
+}
+
+#thg {
+    display: flex;
+    position: absolute;
+    top: 450px;
+    left: 60vw;
+    /* width: 30vw; */
     width: 30vw;
     max-width: 300px;
     border-radius: 50%;
-    animation: fadeLeft 2s;
-    -moz-animation: fadeLeft 2s; /* Firefox */
-    -webkit-animation: fadeLeft 2s; /* Safari and Chrome */
-    -o-animation: fadeLeft 2s; /* Opera */
+    animation: fade 2s;
+    -moz-animation: fade 2s; /* Firefox */
+    -webkit-animation: fade 2s; /* Safari and Chrome */
+    -o-animation: fade 2s; /* Opera */
 }
+
 #square {
     display: flex;
     position: absolute;
@@ -137,46 +187,7 @@ a {
     background-color: #ffffff /*#ff4e0f*/;
     color: #000000;
 }
-@keyframes fadeLeft {
-   0% {
-       transform: translateX(10px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@-moz-keyframes fadeLeft { /* Firefox */
-   0% {
-       transform: translateX(10px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@-webkit-keyframes fadeLeft { /* Safari and Chrome */
-   0% {
-       transform: translateX(10px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
-@-o-keyframes fadeLeft { /* Opera */
-   0% {
-       transform: translateX(10px);
-       opacity:0;
-   }
-   100% {
-       transform: translateX(0px);
-       opacity:1;
-   }
-}
+
 @keyframes fade {
    0% {
        opacity:0;

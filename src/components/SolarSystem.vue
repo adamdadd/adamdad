@@ -296,17 +296,18 @@ body {
     -webkit-transform: rotate(360deg) translatey(-362px) rotate(-360deg);
   }
 }
+
 @-keyframes rot-sat {
   from {
     -webkit-transform: rotate(0deg) translatey(-362px) rotate(0deg);
             transform: rotate(0deg) translatey(-362px) rotate(0deg);
   }
-
   to {
     -webkit-transform: rotate(360deg) translatey(-362px) rotate(-360deg);
             transform: rotate(360deg) translatey(-362px) rotate(-360deg);
   }
 }
+
 .sat {
   width: 58px;
   height: 58px;

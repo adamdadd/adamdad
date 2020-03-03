@@ -1,6 +1,6 @@
 <template>
     <div id="aboutme">
-    <div id="square"></div>
+    <!-- <div id="square"></div> -->
     <h2 id="who">About <span class="name"> Me</span></h2>
     <p>
         "The best part of working in research is pushing 
