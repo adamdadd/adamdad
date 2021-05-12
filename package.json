@@ -10,7 +10,7 @@
   "dependencies": {
     "ajv": "^6.12.0",
     "ajv-keywords": "^3.4.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "d3": "^5.15.0",
     "express": "^4.17.1",
     "init": "^0.1.2",
