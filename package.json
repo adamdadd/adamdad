@@ -32,7 +32,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "vue-events": "^3.1.0",
     "vue-template-compiler": "^2.6.11",
     "vuetable-2": "^1.7.5"
